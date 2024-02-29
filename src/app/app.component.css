@@ -1,0 +1,20 @@
+
+main{
+  height: 90%;
+  width: 80%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+app-navbar{
+  flex-basis: 10%;
+  width: 100%;
+}
+app-layout{
+  flex-basis: 90%;
+}

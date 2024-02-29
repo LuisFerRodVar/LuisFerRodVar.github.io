@@ -1,0 +1,29 @@
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+i{
+  font-size: 2rem;
+}
+span{
+  display: block;
+  font-size: 1.6rem;
+}
+li{
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+div{
+  position: absolute;
+}
