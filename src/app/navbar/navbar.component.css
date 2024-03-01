@@ -24,13 +24,14 @@ span {
   position: absolute;
   font-size: 1.6rem;
   bottom: -10px;
-  color: var(--color_primary);
-  left: 0;
-  right: 0;
+  color: var(--color_secondary);
+  left: -1px;
+  width: 100%;
   opacity: 0;
-  background: var(--color_secondary);
+  background: var(--color_primary);
   z-index: 999;
   transition: all 300ms ease-in-out;
+  pointer-events: none;
 }
 i{
   display: block;
@@ -63,22 +64,21 @@ li:nth-child(6){
 }
 
 div{
-  background: var(--color_secondary);
+  background: var(--color_primary);
   width: calc(100%/6);
-  height: calc(10% - 1rem);
+  height: calc(10% - 1.3rem);
   position: absolute;
   top: 0;
   z-index: 1;
   transition: all 300ms ease-in-out;
 }
 
-
 li:hover>span{
   opacity: 1;
-  transform: translateY(1rem);
+  transform: translateY(2rem);
 }
 .active> a i{
-  color: var(--color_primary);
+  color: var(--color_secondary);
 }
 
 .active:nth-child(1) ~ div {

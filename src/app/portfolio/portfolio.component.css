@@ -5,4 +5,5 @@ section{
   border-right: 1px solid var(--color_detail);
   border-left:  1px solid var(--color_detail);
   border-radius: 0 0 3rem 3rem;
+  background-color: var(--color_primary);
 }
