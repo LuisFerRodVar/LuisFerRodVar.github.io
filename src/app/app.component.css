@@ -11,9 +11,11 @@ main{
   flex-wrap: wrap;
 }
 app-navbar{
-  flex-basis: 10%;
+  flex-basis: 8%;
   width: 100%;
 }
-app-layout{
-  flex-basis: 90%;
+section{
+  flex-basis: 92%;
+  width: 100%;
 }
+
