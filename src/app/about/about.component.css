@@ -1,3 +1,13 @@
 main{
-  padding: 2rem 3rem;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+p{
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+span{
+  color: var(--color_secondary);
 }

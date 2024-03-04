@@ -1,0 +1,23 @@
+h2{
+  font-size: 2.5rem;
+  margin: 2rem;
+  margin-left: 0;
+}
+span{
+  color: var(--color_secondary);
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+li{
+  flex-basis: calc(33% - 3rem);
+  text-align: justify;
+}
+i{
+  font-size: 3rem;
+  color: var(--color_secondary);
+}
