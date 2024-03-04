@@ -24,14 +24,15 @@ span {
   position: absolute;
   font-size: 1.6rem;
   bottom: -10px;
-  color: var(--color_secondary);
+  color: var(--color_primary);
   left: -1px;
   width: 100%;
   opacity: 0;
-  background: var(--color_primary);
+  background: var(--color_secondary);
   z-index: 999;
   transition: all 300ms ease-in-out;
   pointer-events: none;
+  border-radius: 1rem;
 }
 i{
   display: block;
@@ -45,6 +46,7 @@ i{
 
 .active>i{
   color: var(--color_secondary);
+  position: relative;
 }
 
 
@@ -55,6 +57,7 @@ li{
   padding: 1rem;
   flex-direction: column;
   text-align: center;
+  cursor: pointer;
 }
 li:first-child{
   border-top-left-radius: 3rem;
@@ -64,13 +67,13 @@ li:nth-child(6){
 }
 
 div{
-  background: var(--color_primary);
+  background: var(--color_secondary);
   width: calc(100%/6);
-  height: calc(10% - 1.3rem);
+  height: 1px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   z-index: 1;
-  transition: all 300ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 li:hover>span{
@@ -79,6 +82,34 @@ li:hover>span{
 }
 .active> a i{
   color: var(--color_secondary);
+}
+li::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  left: 0;
+  height: 2px;
+  transition: all 300ms ease-in-out;
+  background-color: var(--color_secondary);
+
+}
+li::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 300ms ease-in-out;
+  background-color: var(--color_secondary);
+}
+.active::after{
+  width: 51%;
+
+}
+.active::before{
+  width: 51%;
 }
 
 .active:nth-child(1) ~ div {
