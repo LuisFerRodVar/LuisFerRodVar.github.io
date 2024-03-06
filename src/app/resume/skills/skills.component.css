@@ -1,0 +1,13 @@
+ul{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+li{
+  background-color: var(--color_secondary);
+  color: var(--color_primary);
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+}

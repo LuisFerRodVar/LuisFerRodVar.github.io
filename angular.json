@@ -27,6 +27,7 @@
             "styles": [
               "src/assets/fonts/Mulish/static/mulish.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -93,6 +94,7 @@
             "styles": [
               "src/assets/fonts/Mulish/static/mulish.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
               "src/styles.css"
 
             ],

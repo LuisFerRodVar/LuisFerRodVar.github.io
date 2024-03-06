@@ -17,4 +17,21 @@ section{
   flex-basis: 92%;
   width: 100%;
 }
-
+button{
+  position: fixed;
+  top: 30%;
+  background-color: var(--color_secondary);
+  border-radius: 0 3rem 3rem 0;
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+}
+i{
+  color: var(--color_primary);
+  font-size: 3rem;
+  background-color: transparent;
+}
+.fa-moon{
+  display: none;
+}
