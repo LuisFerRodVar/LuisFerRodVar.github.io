@@ -36,5 +36,10 @@ div::after{
 }
 h3{
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: normal;
+  font-style: italic;
+
+}
+span{
+  font-weight: bold;
 }
