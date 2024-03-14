@@ -1,5 +1,3 @@
-
-
 input{
   display: none;
 }
@@ -14,7 +12,7 @@ main {
 }
 
 .container {
-    max-width: 1044px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     height: 100%;
@@ -90,20 +88,6 @@ main {
         object-fit: cover;
     }
 
-    figcaption {
-        align-self: flex-end;
-        padding: 20px 20px 0 20px;
-        flex: 0 0 auto;
-        width: 25%;
-        min-width: 150px;
-    }
-
-    .credit {
-        margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
-        display: block;
-    }
-
     &.scrollable {
         overflow-y: scroll;
     }
@@ -114,8 +98,8 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-
     margin: 0 -10px;
+    margin-bottom: 3rem;
 
     .carousel__slides + & {
         margin-top: 20px;
