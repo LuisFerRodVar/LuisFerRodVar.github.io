@@ -1,0 +1,163 @@
+<header>
+    <div></div>
+    <h1>
+        Tutorial de Git básico
+    </h1>
+    <h2>
+        <strong>
+            02/02/2024
+        </strong>
+        <strong>
+            Luis Fernando Rodríguez
+        </strong>
+    </h2>
+</header>
+<main>
+    <p>
+        Git es el sistema de control de versiones por excelencia. Desde su lanzamiento en 2007 ha sabido imponerse sobre
+        las demás alternativas y actualmente es una herramienta muy importante para los desarrolladores. Tener una buena
+        gestión de versiones en un proyecto puede ayudar enormemente a simplificar el proceso de desarrollo y en este
+        artículo voy a enseñar todo lo básico para manejar repositorios de manera local, para ir paso a paso no voy a
+        hablar sobre plataformas que utilizan git como Github o Gitlab en este artículo.
+    </p>
+    <ul>
+        <h3>
+            Contenido del artículo
+        </h3>
+        <li>
+            <a (click)="scroll(section1)">
+                1. Instalación de Git
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(section2)">
+                2. Configuración de Git
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(section3)">
+                3. Inicializar un repositorio de Git
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(section4)">
+                4. Realizar cambios y guardarlos
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(section5)">
+                5. Ver historial de cambios
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(section6)">
+                6. ¿Qué son las ramas y cómo se trabaja con ellas?
+            </a>
+        </li>
+        <li>
+            <a (click)="scroll(conclusion)">
+                Conclusión
+            </a>
+        </li>
+    </ul>
+    <h4 #section1>
+        1. Instalación de Git
+    </h4>
+    <p>
+        Para instalar Git ve a <a href="https://git-scm.com/" target="_blank">la página oficial de Git</a> y sigue las
+        instrucciones para realizar la instalación en su sistema operativo.
+    </p>
+    <h4 #section2>
+        2. Configuración de Git
+    </h4>
+    <p>
+        Una vez instalado Git es necesario indicar quién es la persona que realiza los cambios en el equipo. Para lograr
+        esto, digita los siguientes comandos en la terminal de su sistema operativo, cambiando los valores de nombre y
+        algo&#64;email.com por su nombre y correo electrónico, respectivamente.
+    </p>
+    <code>
+        git config --global user.name "Tu Nombre"
+        <br>
+        git config --global user.email "tu&#64;email.com"
+    </code>
+    <h4 #section3>
+        3. Inicializar un repositorio de Git
+    </h4>
+    <p>
+        Ahora sí ya está todo listo para iniciar el primer repositorio. Simplemente hay que navegar en la terminal hasta
+        llegar a la carpeta raíz del proyecto al que queramos manejar sus versiones. Para esto, basta con digitar el
+        siguiente comando:
+    </p>
+    <code>
+        git init
+    </code>
+    <h4 #section4>
+        4. Realizar cambios y guardarlos
+    </h4>
+    <p>
+        Para realizar cambios primero hay que agregar archivos al área de preparación. Para esto, basta con digitar el
+        siguiente comando:
+    </p>
+    <code>
+        git add nombre_del_archivo
+    </code>
+    <p>
+        ¿Entonces tengo que ir agregando archivos uno a uno? No, puede digitar el siguiente comando si desea que todos
+        los archivos y carpetas se agreguen (hay una excepción y serían los archivos señalizados en .gitignore). Digite
+        el siguiente comando:
+    </p>
+    <code>
+        git add .
+    </code>
+    <p>
+        Una vez que los archivos y carpetas están correctamente agregados en el área de preparación, ya es posible
+        guardarlos haciendo un commit con el siguiente comando. Es recomendable agregar un comentario cada vez que
+        guarda cambios con el fin de identificar con mayor facilidad qué cambios hizo esa versión del proyecto.
+    </p>
+    <h4 #section5>
+        5. Ver historial de cambios
+    </h4>
+    <p>
+        Basta con colocar el siguiente comando, mostrará la lista de commits con información como autor, fecha y
+        descripción:
+    </p>
+    <code>
+        git log
+    </code>
+    <h4 #section6>
+        6. ¿Qué son las ramas y cómo se trabaja con ellas?
+    </h4>
+    <p>
+        Una rama es como una bifurcación en el proyecto (una especie de universo paralelo), aunque suene un poco
+        complejo no lo es tanto. Imagina un árbol, este tiene un tronco que sería la rama principal y a partir de este
+        tronco pueden salir ramas que toman como base al tronco. Algo así son las ramas en Git, versiones del proyecto
+        que toman la base de este pero que se pueden alejar y tomar su propio rumbo. Para crear una rama hay que digitar
+        el siguiente comando:
+    </p>
+    <code>
+        git branch nombre_de_la_rama
+    </code>
+    <p>
+        Para cambiar de rama se utiliza el siguiente comando:
+    </p>
+    <code>
+        git checkout nombre_de_la_rama
+    </code>
+    <p>
+        Ahora podría trabajar en una rama nueva para que los cambios que realice no afecten a la rama principal. Sin
+        embargo, si en algún momento desea fusionar las ramas puede hacerlo con los siguientes comandos:
+    </p>
+    <code>
+        git checkout rama_destino
+        <br>
+        git merge rama_a_fusionar
+    </code>
+    <h4 #conclusion>
+        Conclusión
+    </h4>
+    <p>
+        Felicidades, has completado el tutorial básico de Git. En este artículo me limité a únicamente hablar sobre cómo
+        trabajar con repositorios locales. Sin embargo, con Git se puede trabajar en repositorios remotos para colaborar
+        con más personas. Probablemente lo veamos en un futuro artículo.
+    </p>
+</main>

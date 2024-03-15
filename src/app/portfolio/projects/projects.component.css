@@ -4,7 +4,15 @@ main {
     flex-wrap: wrap;
     gap: 3rem;
   }
-  
+  .card1{
+    background-image: url("../../../assets/img/portfolio1.png");
+  }
+  .card2{
+    background-image: url("../../../assets/img/portafolio2.jpg");
+  }
+  .card3{
+    background-image: url("../../../assets/img/portafolio3.jpg");
+  }
   .card {
     border-radius: 16px;
     margin: 0 auto;
@@ -13,7 +21,6 @@ main {
       0px 5px 8px 0px var(--color_detail3),
       0px 1px 14px 0px var(--color_detail3);
     overflow: hidden;
-    background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
     background-size: cover;
   }
   
@@ -27,7 +34,7 @@ main {
       translateZ(0);
     transition: transform 0.5s ease-out;
   }
-  
+ 
   .info:before {
     z-index: -1;
     display: block;
@@ -36,7 +43,6 @@ main {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
     filter: blur(10px);
     background-size: cover;
     opacity: 0.25;
@@ -64,10 +70,6 @@ main {
     font-size: 1.6rem;
     line-height: 1.5;
   }
-  
-
-  
-
   
 
   
@@ -121,7 +123,9 @@ main {
   }
   
   a {
-    color: #e03616;
-    text-decoration: none
+    color: var(--color_primary);
+    text-decoration: none;
+    display: block;
+    font-style: italic;
   }
   
