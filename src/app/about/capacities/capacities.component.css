@@ -17,6 +17,16 @@ li{
   flex-basis: calc(33% - 3rem);
   text-align: justify;
 }
+@media (max-width: 750px){
+  li{
+    flex-basis: calc(50% - 3rem);
+  }
+}
+@media (max-width: 580px){
+  li{
+    flex-basis: 100%;
+  }
+}
 i{
   font-size: 3rem;
   color: var(--color_secondary);

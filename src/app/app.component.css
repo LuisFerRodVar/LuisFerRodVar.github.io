@@ -9,6 +9,14 @@ main{
   margin: 0 auto;
   flex-direction: column;
 }
+@media (max-width: 1080px){
+  main{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+  }
+}
 app-navbar{
   flex-basis: 8%;
   width: 100%;

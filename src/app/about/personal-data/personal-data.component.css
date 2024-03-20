@@ -27,3 +27,9 @@ span{
   font-weight: bold;
   color: var(--color_secondary);
 }
+
+@media (max-width: 780px){
+  figure{
+    flex-direction: column;
+  }
+}
