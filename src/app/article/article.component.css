@@ -59,3 +59,8 @@ code{
     background-color: var(--color_secondary);
     padding: 0.5rem;
 }
+@media (max-width:600px){
+    ul{
+        width: 100%;
+    }
+}

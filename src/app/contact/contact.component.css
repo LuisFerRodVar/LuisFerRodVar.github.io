@@ -17,3 +17,14 @@ app-contact-form{
 span{
     color: var(--color_secondary);
 }
+@media (max-width:700px){
+    div{
+        flex-direction: column;
+    }
+    app-decoration{
+        flex-basis: 100%;
+    }
+    app-contact-form{
+        flex-basis: 100%;
+    }
+}
