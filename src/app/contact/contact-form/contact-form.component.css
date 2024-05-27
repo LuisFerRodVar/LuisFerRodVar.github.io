@@ -46,7 +46,7 @@ textarea{
     border: 1px solid var(--color_secondary);
     resize: none;
     outline: none;
-    
+
 }
 
 .btn{
@@ -60,4 +60,10 @@ textarea{
 }
 input:focus{
     border: 1px solid var(--color_secondary);
+}
+@media (max-width: 700px){
+
+  form{
+    margin-left: 0;
+  }
 }
